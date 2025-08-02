@@ -1,0 +1,28 @@
+# .zshrc
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/davide/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+#Aliases
+
+alias robotics="cd /home/davide/Scrivania/Uni/Didattica\ Uni/Terzo\ anno/p_semestre/Robotica\ industriale/Programmi\ Davide"
+alias update="sudo dnf update"
+alias upgrade="sudo dnf upgrade"
+alias fupdate="flatpak update"
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/include
