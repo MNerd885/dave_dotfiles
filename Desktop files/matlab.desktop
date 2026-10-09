@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+MimeType=text/x-matlab
+Exec=env LD_PRELOAD="/usr/lib64/libstdc++.so.6 /usr/lib64/libfreetype.so.6" LD_LIBRARY_PATH=/usr/lib/dri/ /home/$USER/Matlab/bin/matlab -desktop
+Name=Matlab
+Icon=/home/$USER/Matlab/bin/glnxa64/cef_resources/matlab_icon.png
+Categories=Development;Math;Science
+Comment=Scientific computing environment
+StartupNotify=true
