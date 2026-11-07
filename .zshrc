@@ -102,15 +102,12 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias nvconfig="cd ~/.config/nvim/ && nvim"
-alias robotics="cd ~/Scrivania/Uni/Didattica\ Uni/Terzo\ anno/p_semestre/Robotica\ industriale/Programmi\ Davide"
-alias simtesi="cd ~/Scrivania/Tesi laurea/Simulazioni/"
-alias projects="cd ~/Scrivania/Projects"
+alias master-notes="cd ~/Scrivania/Master-Notes"
 alias update="sudo dnf update"
 alias upgrade="sudo dnf upgrade"
 alias fupdate="flatpak update"
 
 #Learning languages
-alias c_lang="cd ~/Scrivania/Learning\ C/ && nvim "
 alias matlab="cd ~/Matlab/bin/ && ./matlab -desktop"
 
 # C++ dynamic linked libraries
