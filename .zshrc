@@ -4,6 +4,9 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Path of Rust
+export PATH=$PATH:$HOME/.cargo/bin
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -69,7 +72,7 @@ zstyle ':omz:update' frequency 7
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git emoji)
+plugins=(git emoji zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,17 +105,16 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias nvconfig="cd ~/.config/nvim/ && nvim"
-alias robotics="cd ~/Scrivania/Uni/Didattica\ Uni/Terzo\ anno/p_semestre/Robotica\ industriale/Programmi\ Davide"
-alias simtesi="cd ~/Scrivania/Tesi laurea/Simulazioni/"
-alias projects="cd ~/Scrivania/Projects"
+alias master-notes="cd ~/Scrivania/Master-Notes/"
 alias update="sudo dnf update"
 alias upgrade="sudo dnf upgrade"
 alias fupdate="flatpak update"
 
 #Learning languages
-alias c_lang="cd ~/Scrivania/Learning\ C/ && nvim "
 alias matlab="cd ~/Matlab/bin/ && ./matlab -desktop"
 
 # C++ dynamic linked libraries
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/include
 
+# Rust shell config
+. "$HOME/.cargo/env"
